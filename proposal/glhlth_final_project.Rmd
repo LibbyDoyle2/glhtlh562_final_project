@@ -1,0 +1,27 @@
+---
+title: "final_project"
+author: "Libby Doyle"
+date: "2024-03-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+library(tidyverse)
+library(haven)
+
+durhamdata <- readRDS("~/Desktop/Spring 2024/R DATA VIZ/GLHLTH562/FinalProject/yg821jf8611_nc_durham_2020_04_01.rds")
+
+library(dataReporter) 
+
+codebook <- makeCodebook(data = durhamdata) 
+
+
+
+```
+
