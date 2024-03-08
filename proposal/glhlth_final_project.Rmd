@@ -21,7 +21,23 @@ library(dataReporter)
 
 codebook <- makeCodebook(data = durhamdata) 
 
-
-
 ```
+```{r summary stats}
+table_race <- table(durhamdata$subject_race)
+table_race
 
+table_sex <- table(durhamdata$subject_sex)
+table_sex
+
+table_arrest <- table(durhamdata$arrest_made)
+table_arrest
+
+table_warning <- table(durhamdata$warning_issued)
+table_warning
+
+table_citation <- table(durhamdata$citation_issued)
+table_citation
+
+table_frisk <- table(durhamdata$frisk_performed)
+table_frisk
+```
