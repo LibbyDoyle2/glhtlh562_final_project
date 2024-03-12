@@ -26,12 +26,9 @@ library(dataReporter)
 
 ```{r codebook}
 
-# load packages
+# load data
 
-durhamdata <- readRDS("~/Library/CloudStorage/Box-Box/glhlth_562/data/yg821jf8611_nc_durham_2020_04_01.rds")
-
-#load data
-# durhamdata <- readRDS("~/Desktop/Spring 2024/R DATA VIZ/GLHLTH562/FinalProject/yg821jf8611_nc_durham_2020_04_01.rds")
+durhamdata <- readRDS("~/Desktop/Spring 2024/R DATA VIZ/GLHLTH562/FinalProject/yg821jf8611_nc_durham_2020_04_01.rds")
 
 #keep relevant variables
 durhamdata <- durhamdata |> 
