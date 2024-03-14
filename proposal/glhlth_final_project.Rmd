@@ -25,14 +25,15 @@ This project utilizes data collected by the Stanford Open Policing Project. The 
 library(tidyverse)
 library(haven)
 library(dataReporter) 
+library(her)
 ```
 
 
 ```{r codebook}
 
 # load data
+durhamdata <- readRDS(here(box_path, "yg821jf8611_nc_durham_2020_04_01.rds")
 
-durhamdata <- readRDS("~/Desktop/Spring 2024/R DATA VIZ/GLHLTH562/FinalProject/yg821jf8611_nc_durham_2020_04_01.rds")
 
 #keep relevant variables
 durhamdata <- durhamdata |> 
